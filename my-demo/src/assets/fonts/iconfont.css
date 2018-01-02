@@ -1,0 +1,138 @@
+
+@font-face {font-family: "iconfont";
+  src: url('./iconfont.eot?t=1509524659255'); /* IE9*/
+  src: url('./iconfont.eot?t=1509524659255#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff'),
+  url('./iconfont.ttf?t=1509524659255') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('./iconfont.svg?t=1509524659255#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face{
+  font-family: 'music-icon';
+  src: url('./music-icon.eot?2qevqt');
+  src: url('./music-icon.eot?2qevqt#iefix') format('embedded-opentype'),
+          url('./music-icon.ttf?2qevqt') format('truetype'),
+          url('./music-icon.woff?2qevqt') format('woff'),
+          url('./music-icon.svg?2qevqt#music-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}  
+
+[class^="icon-"], [class*=" icon-"]{
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'music-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+.icon-yanzhengma:before { content: "\e678"; }
+
+.icon-mima:before { content: "\e61d"; }
+
+.icon-zhanghu:before { content: "\e60b"; }
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.icon-ok:before {
+  content: "\e900"
+}
+
+.icon-close:before {
+  content: "\e901"
+}
+
+.icon-add:before {
+  content: "\e902"
+}
+
+.icon-play-mini:before {
+  content: "\e903"
+}
+
+.icon-playlist:before {
+  content: "\e904"
+}
+
+.icon-music:before {
+  content: "\e905"
+}
+
+.icon-search:before {
+  content: "\e906"
+}
+
+.icon-clear:before {
+  content: "\e907"
+}
+
+.icon-delete:before {
+  content: "\e908"
+}
+
+.icon-favorite:before {
+  content: "\e909"
+}
+
+.icon-not-favorite:before {
+  content: "\e90a"
+}
+
+.icon-pause:before {
+  content: "\e90b"
+}
+
+.icon-play:before {
+  content: "\e90c"
+}
+
+.icon-prev:before {
+  content: "\e90d"
+}
+
+.icon-loop:before {
+  content: "\e90e"
+}
+
+.icon-sequence:before {
+  content: "\e90f"
+}
+
+.icon-random:before {
+  content: "\e910"
+}
+
+.icon-back:before {
+  content: "\e911"
+}
+
+.icon-mine:before {
+  content: "\e912"
+}
+
+.icon-next:before {
+  content: "\e913"
+}
+
+.icon-dismiss:before {
+  content: "\e914"
+}
+
+.icon-pause-mini:before {
+  content: "\e915"
+}
+
+

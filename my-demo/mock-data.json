@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "aaa",
+      "password": "aaa"
+    },
+    {
+      "id": 2,
+      "username": "bbb",
+      "password": "bbb"
+    },
+    {
+      "id": 3,
+      "username": "ccc",
+      "password": "ccc"
+    },
+    {
+      "id": "9",
+      "username": "kkk",
+      "password": "lol"
+    },
+    {
+      "id": "ryFtozxJG"
+    }
+  ],
+  "lolteam": [
+    {
+      "teamname": "Team We",
+      "top": "957",
+      "juggle": "condi",
+      "mid": "xiye",
+      "adc": "mysticy",
+      "support": "ben"
+    },
+    {
+      "teamname": "RNG",
+      "top": "LETME",
+      "juggle": "MLXG",
+      "mid": "xiaohu",
+      "adc": "uzi",
+      "support": "ming"
+    }
+  ],
+  "reg": []
+}

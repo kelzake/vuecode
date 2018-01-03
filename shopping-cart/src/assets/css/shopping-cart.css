@@ -10,13 +10,13 @@
     list-style: none;
   }
   .item-container {
-    position: relative;
-    min-width: 640px;
-    height: 100%;
-    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 77px;
     color: #222222;
     background-color: #ffffff;
-    border: 1px solid #ccc; 
+    overflow-y: auto; 
   }
   .item-wrap{
     display: table;
@@ -24,31 +24,31 @@
   }
   .checkbox-a{
     display: inline-block; 
-    background-color: #FFF; 
-    border: 1px solid #C1CACA; 
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05); 
-    padding: 9px; 
-    border-radius: 5px; 
     position: relative; 
+    padding: 9px; 
+    background-color: #fffff; 
+    border: 1px solid #c1caca; 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05); 
+    border-radius: 5px; 
     margin-right: 30px; 
   }
   .checkbox-a.checked{
-    background-color: #ECF2F7; 
-    border: 1px solid #92A1AC; 
+    background-color: #ecf2f7; 
+    border: 1px solid #92a1ac; 
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1); 
     color: #243441; 
   }
   .checkbox-a.checked:after{
-    content: '\2714'; 
     position: absolute; 
+    content: '\2714'; 
     top: 0px; 
     left: 0px; 
-    color: #758794; 
     width: 100%; 
-    text-align: center; 
-    font-size: 1em; 
     padding: 1px 0 0 0; 
-    vertical-align: text-top; 
+    text-align: center; 
+    font-size: 18px;
+    line-height: 20px; 
+    color: #758794; 
   }
   .item-list{
     display: table-header-group;
@@ -64,8 +64,8 @@
   .item-list > li > *{
     display: table-cell;
     padding: 10px 10px;
-    vertical-align: middle;
     text-align: center;
+    vertical-align: middle;
     border-bottom: 1px solid #ccc;
   }
   .item-list > li > *:first-child{
@@ -99,6 +99,12 @@
     bottom: 0;
     border-top: 1px solid #ccc;
   }
+  .item-cart > a{
+    top: 2px;
+  }
+  .item-cart > span{
+    line-height: 45px;
+  }
   .item-checkout{
     float: right;
     min-width: 200px;
@@ -114,7 +120,6 @@
     color: #ffffff;
     font-size: 12px;
     padding: 6px;
-    border-radius: 4px;
     background-color: #d1434a;
     cursor: pointer;
   }
@@ -150,12 +155,15 @@
   .confirm-panel > a{
     float: left;
     width: 50%;
-    color: #ffffff;
     padding: 10px 20px;
     line-height: 1.8;
+    color: #ffffff;
     text-align: center;
     text-decoration: none;
     background-color: #d1434a;
     background-clip:content-box;
     cursor: pointer;
+  }
+  .confirm-panel > a+a{
+    background-color: #9e9898;
   }

@@ -7,11 +7,13 @@
   "scripts": {
     "mock": "json-server mock-data.json -w &",
     "dev": "webpack-dev-server --inline --progress --open --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
+    "start": "npm run mock | npm run dev",
     "build": "node build/build.js"
   },
   "dependencies": {
     "axios": "^0.17.1",
+    "concurrently": "^3.5.1",
+    "json-server": "^0.12.1",
     "mockjs": "^1.0.1-beta3",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",

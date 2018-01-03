@@ -1,43 +1,45 @@
 <template>
-  <div class="item-container">
-    <div class="item-wrap">
-      <ul class="item-list">
-        <li class="item-head">
-          <span>&nbsp;</span>
-          <span>&nbsp;</span>
-          <span>商品名称</span>
-          <span>单价</span>
-          <span>数量</span>
-          <span>总额</span>
-          <span>操作</span>
-        </li>
-        <li v-for="item in commodits">
-          <span><a class="checkbox-a" :class="{'checked':item.checked}"  @click="selectItem(item)"></a></span>
-          <a class="item-image-case"><img :src="item.imagepath"></a>
-          <span>{{item.name}}</span>
-          <span class="">{{item.price | toFixed}}</span>
-          <div class="item-queunit">
-              <a @click="reduety(item)">-</a>
-              <input type="text" v-model="item.quentity" disabled >
-              <a @click="addQuety(item)">+</a>
-          </div>
-          <span>{{itemCount(item) | toFixed}}</span>
-          <span><a class="item-rebtn" @click="toConfirm(item)">删除</a></span>
-        </li>
-      </ul>
+  <div>
+    <div class="item-container">
+      <div class="item-wrap">
+        <ul class="item-list">
+          <li class="item-head">
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>商品名称</span>
+            <span>单价</span>
+            <span>数量</span>
+            <span>总额</span>
+            <span>操作</span>
+          </li>
+          <li v-for="item in commodits">
+            <span><a class="checkbox-a" :class="{'checked':item.checked}"  @click="selectItem(item)"></a></span>
+            <a class="item-image-case"><img :src="item.imagepath"></a>
+            <span>{{item.name}}</span>
+            <span class="">{{item.price | toFixed}}</span>
+            <div class="item-queunit">
+                <a @click="reduety(item)">-</a>
+                <input type="text" v-model="item.quentity" disabled >
+                <a @click="addQuety(item)">+</a>
+            </div>
+            <span>{{itemCount(item) | toFixed}}</span>
+            <span><a class="item-rebtn" @click="toConfirm(item)">删除</a></span>
+          </li>
+        </ul>
+      </div>
+      <div class="confirm-layer" v-show="confirm">
+        <div class="confirm-panel">
+          <p>确定要删除这个商品？</p>
+          <a @click="deleteItem(deleteid)">确定</a>
+          <a @click="cancel()">取消</a>
+        </div>
+      </div>    
     </div>
     <div class="item-cart">
       <a class="checkbox-a" :class="{'checked':selectall}"  @click="toggleAll()"></a>
-      <span>全选</span>
+      <span class="item-text">全选</span>
       <button type="button" class="item-checkout">去结算：{{totalPrice | toFixed}}</button>
     </div>
-    <div class="confirm-layer" v-show="confirm">
-      <div class="confirm-panel">
-        <p>确定要删除这个商品？</p>
-        <a @click="deleteItem(deleteid)">确定</a>
-        <a @click="cancel()">取消</a>
-      </div>
-    </div>    
   </div>
 </template>
 

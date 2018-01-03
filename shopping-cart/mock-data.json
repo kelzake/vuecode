@@ -2,36 +2,42 @@
   "items": [
     {
       "id": "item-001",
+      "imagepath":"/static/images/item_01.jpg",
       "name": "大白兔奶糖",
       "quentity":10,
       "price": 15.43
     },
     {
       "id": "item-002",
+      "imagepath":"/static/images/item_02.jpg",
       "name": "555电池",
       "quentity":2,
       "price": 7.02
     },
     {
       "id": "item-003",
+      "imagepath":"./static/images/item_03.jpg",
       "name": "美的电热水壶",
       "quentity":1,
       "price": 108.20
     },
     {
       "id": "item-004",
+      "imagepath":"/static/images/item_04.jpg",
       "name": "iphone 6s",
       "quentity":2,
       "price": 3378.00
     },
     {
       "id": "item-005",
+      "imagepath":"/static/images/item_05.jpg",
       "name": "小米手环",
       "quentity":3,
       "price": 499.50
     },
     {
       "id": "item-006",
+      "imagepath":"/static/images/item_06.jpg",
       "name": "九阳豆浆机",
       "quentity":3,
       "price": 299.90
